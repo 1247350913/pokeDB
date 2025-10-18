@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "apps/renderer" },
+    { "path": "apps/desktop" },
+    { "path": "services/api" },
+    { "path": "packages/ui" },
+    { "path": "packages/shared-types" }
+  ]
+}

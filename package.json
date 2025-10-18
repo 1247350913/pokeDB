@@ -1,0 +1,30 @@
+{
+  "name": "pokedb",
+  "private": true,
+  "scripts": {
+    "build": "cd client && pnpm build && tsc -p electron",
+
+    "dev": "concurrently -k \"cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .\" \"cd client && pnpm dev\"",
+
+    "start": "electron .",
+
+	  "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "31.0.0",
+    "concurrently": "8.2.0",
+    "wait-on": "7.0.1",
+    "cross-env": "7.0.3",
+	  "@eslint/js": "9.36.0",
+    "@types/node": "24.6.0",
+
+    "eslint": "9.36.0",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.22",
+    "globals": "16.4.0",
+    "typescript-eslint": "8.45.0"
+  }
+}

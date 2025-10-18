@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  pg:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: app
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+  adminer:
+    image: adminer
+    ports: ["8080:8080"]
+volumes:
+  pgdata:

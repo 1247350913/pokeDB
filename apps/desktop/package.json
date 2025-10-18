@@ -1,0 +1,21 @@
+{
+  "name": "@apps/desktop",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsc -b && electronmon .",
+    "build": "tsc -b",
+    "start": "electron .",
+    "migrate:sqlite": "tsx scripts/migrate-sqlite.ts"
+  },
+  "dependencies": {
+    "electron": "^31.3.0",
+    "better-sqlite3": "^11.5.0"
+  },
+  "devDependencies": {
+    "electronmon": "^2.0.3",
+    "tsx": "^4.17.0",
+    "typescript": "^5.6.3"
+  }
+}

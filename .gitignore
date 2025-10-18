@@ -1,0 +1,56 @@
+# ─────────────────────────────
+#  Logs & debug
+# ─────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─────────────────────────────
+#  Dependencies
+# ─────────────────────────────
+node_modules/
+.pnp/
+.pnp.js
+
+# ─────────────────────────────
+#  Build artifacts
+# ─────────────────────────────
+dist/
+build/
+out/
+release/
+dist-ssr/
+*.local
+
+# ─────────────────────────────
+#  Environment & runtime
+# ─────────────────────────────
+.env
+.env.*.local
+.cache/
+.temp/
+coverage/
+*.sqlite
+*.sqlite-journal
+
+# ─────────────────────────────
+#  IDE & editor cruft
+# ─────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─────────────────────────────
+#  OS junk
+# ─────────────────────────────
+.DS_Store
+Thumbs.db
