@@ -1,25 +1,26 @@
 {
   "name": "pokedb",
   "private": true,
+  "packageManager": "pnpm@10.18.3",
   "scripts": {
-    "build": "cd client && pnpm build && tsc -p electron",
-    "dev": "concurrently -k \"cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .\" \"cd client && pnpm dev\"",
-    "start": "electron .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "build": "turbo run build",
+    
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rimraf node_modules .turbo",
+    
+    "dev-desktop": "turbo run dev --parallel --filter=@apps/desktop-renderer --filter=@apps/desktop-electron"
   },
   "devDependencies": {
-    "@eslint/js": "9.36.0",
+    "turbo": "^2.5.8",
+    "typescript": "^5.6.3",
+    "rimraf": "^6.0.1",
     "@types/node": "24.6.0",
-    "concurrently": "8.2.0",
-    "cross-env": "7.0.3",
-    "electron": "31.0.0",
     "eslint": "9.36.0",
+    "@eslint/js": "9.36.0",
+    "typescript-eslint": "8.45.0",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "0.4.22",
-    "globals": "16.4.0",
-    "turbo": "^2.5.8",
-    "typescript-eslint": "8.45.0",
-    "wait-on": "7.0.1"
+    "globals": "16.4.0"
   }
 }

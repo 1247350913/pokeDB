@@ -3,25 +3,22 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [
-        "dist/**",
-        "build/**",
-        "out/**"
-      ]
+      "outputs": ["dist/**", "build/**", "out/**"]
     },
     "typecheck": {
       "dependsOn": ["^typecheck"],
       "outputs": []
     },
     "lint": {
+      "dependsOn": ["^lint"],
       "outputs": []
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "clean": {
+      "cache": false
     }
-  },
-  "globalEnv": [
-    "NODE_ENV"
-  ]
+  }
 }

@@ -8,6 +8,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+turbo-debug.log*
 
 # ─────────────────────────────
 #  Dependencies
@@ -25,6 +26,14 @@ out/
 release/
 dist-ssr/
 *.local
+
+# ─────────────────────────────
+#  Turbo cache & artifacts
+# ─────────────────────────────
+.turbo/
+turbo/
+turbo.json.lock
+/turbo
 
 # ─────────────────────────────
 #  Environment & runtime
