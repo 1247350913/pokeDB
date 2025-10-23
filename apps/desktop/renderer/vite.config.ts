@@ -7,7 +7,7 @@ export default defineConfig({
   server: { port: 5173, strictPort: true },
   resolve: {
     alias: {
-      "@platform": path.resolve(__dirname, "src/platform")
+      "@app-ui": path.resolve(__dirname, '../../../packages/app-ui/src'),
     }
   }
 });

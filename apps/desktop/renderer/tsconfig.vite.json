@@ -3,7 +3,11 @@
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "NodeNext",
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "@packages/app-ui": ["../../../packages/app-ui/src/index.ts"],
+      "@packages/app-ui/*": ["../../../packages/app-ui/src/*"]
+    }
   },
   "include": ["vite.config.ts"]
 }

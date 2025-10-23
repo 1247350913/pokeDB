@@ -57,9 +57,9 @@ importers:
 
   apps/desktop/renderer:
     dependencies:
-      '@packages/apps-ui':
+      '@packages/app-ui':
         specifier: workspace:*
-        version: link:../../../packages/apps-ui
+        version: link:../../../packages/app-ui
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -92,7 +92,7 @@ importers:
         specifier: ^5.4.8
         version: 5.4.21(@types/node@24.6.0)
 
-  packages/apps-ui:
+  packages/app-ui:
     dependencies:
       '@packages/ui':
         specifier: workspace:*

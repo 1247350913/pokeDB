@@ -9,7 +9,7 @@
     "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
-    "@packages/apps-ui": "workspace:*",
+    "@packages/app-ui": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1"

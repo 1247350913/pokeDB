@@ -1,9 +1,9 @@
 {
-  "name": "@packages/apps-ui",
+  "name": "@packages/app-ui",
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/App.tsx"
+    ".": "./src/app/App.tsx"
   },
   "scripts": {
     "build": "tsc -b",
