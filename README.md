@@ -1,3 +1,3 @@
 # pokeDB
 
-This is a cool thing that does stuff.
+poke database to build parties and find unique hm slaves per generation.
