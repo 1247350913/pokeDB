@@ -1,0 +1,13 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-accent: #007bff;
+  --font-main: "Inter", sans-serif;
+  --radius-md: 8px;
+  --space-sm: 8px;
+  --space-md: 16px;
+
+  --form-width: 320px;
+}
+
+

@@ -49,7 +49,9 @@ coverage/
 # ─────────────────────────────
 #  IDE & editor cruft
 # ─────────────────────────────
-.vscode/*
+.vscode/
+vscode/
+/vscode
 !.vscode/extensions.json
 .idea/
 *.suo

@@ -1,0 +1,45 @@
+.ui-button {
+  composes: ui-reset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.ui-button:active {
+  transform: translateY(1px);
+}
+
+.ui-button--primary {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.ui-button--primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.ui-button--secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.ui-button--ghost {
+  background: none;
+  color: var(--color-text);
+}
+
+/* Disabled state (applies to all variants) */
+.ui-button:disabled,
+.ui-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  pointer-events: none;
+}

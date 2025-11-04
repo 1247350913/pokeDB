@@ -1,0 +1,121 @@
+.signup-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-card {
+  width: 340px;
+
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.signup-title {
+  margin: 0;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.signup-error {
+  color: #d93025;
+  background: rgba(217, 48, 37, 0.1);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.signup-login {
+  margin-top: var(--space-md);
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.signup-login-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-login-link:hover {
+  text-decoration: underline;
+}
+
+/* Password checklist */
+.pw-checklist {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pw-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+.pw-check-icon {
+  width: 1.1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.pw-check.ok .pw-check-icon { color: #1a7f37; }   /* green check */
+.pw-check.nope .pw-check-icon { color: #d93025; } /* red X */
+
+.signup-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.required-asterisk {
+  color: #d93025;
+  margin-left: 3px;
+  font-weight: bold;
+}
+
+.username-options {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.username-option input {
+  margin-right: 4px;
+}
+
+/* Validity feedback */
+.ui-input.is-invalid {
+  border-color: #d93025;
+  box-shadow: 0 0 0 2px rgba(217, 48, 37, 0.25);
+}
+
+.ui-input.is-valid {
+  border-color: #1a7f37;
+  box-shadow: 0 0 0 2px rgba(26, 127, 55, 0.25);
+}

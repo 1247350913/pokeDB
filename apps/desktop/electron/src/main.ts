@@ -18,7 +18,7 @@ async function createWindow() {
     win.webContents.openDevTools({ mode: "detach" });
   } else {
     // production: load built files from renderer-desktop
-    await win.loadFile(path.join(__dirname, "../../renderer-desktop/dist/index.html"));
+    await win.loadFile(path.join(__dirname, "../../renderer/dist/index.html"));
   }
 }
 

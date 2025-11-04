@@ -1,7 +1,12 @@
-function Input() { 
-  return (
-    <input style={{ padding: 8, borderRadius: 6, border: "1px solid #ccc" }} />
-  )
-}
+import React from "react";
+import "./Input.css";
 
-export default Input;
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+export const Input: React.FC<InputProps> = ({
+  className = "",
+  ...rest
+}) => {
+  return <input className={`ui-input ${className}`} {...rest} />;
+};
