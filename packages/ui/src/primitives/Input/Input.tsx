@@ -1,5 +1,5 @@
 import React from "react";
-import "./Input.css";
+import styles from "./Input.module.css";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
@@ -8,5 +8,10 @@ export const Input: React.FC<InputProps> = ({
   className = "",
   ...rest
 }) => {
-  return <input className={`ui-input ${className}`} {...rest} />;
+  return (
+    <input
+      className={`${styles.reset} ${styles.base} ${className}`}
+      {...rest}
+    />
+  );
 };

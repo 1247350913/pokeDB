@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--color-border, #e5e7eb);
+  padding: var(--space-md, 16px) 0;
+  text-align: center;
+  background-color: var(--color-surface, #fff);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.text {
+  color: var(--color-text, #444);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  user-select: none;
+}

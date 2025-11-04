@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import styles from "./Button.module.css";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -8,13 +8,20 @@ export interface ButtonProps
 
 export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
-  children,
   className = "",
+  children,
   ...rest
 }) => {
+  const variantClass =
+    variant === "secondary"
+      ? styles.secondary
+      : variant === "ghost"
+      ? styles.ghost
+      : styles.primary;
+
   return (
     <button
-      className={`ui-button ui-button--${variant} ${className}`}
+      className={`${styles.reset} ${styles.base} ${variantClass} ${className}`}
       {...rest}
     >
       {children}

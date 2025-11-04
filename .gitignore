@@ -26,6 +26,7 @@ out/
 release/
 dist-ssr/
 *.local
+*.tsbuildinfo
 
 # ─────────────────────────────
 #  Turbo cache & artifacts

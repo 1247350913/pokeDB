@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-surface, #fff);
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  padding: 0 var(--space-lg, 24px);
+  z-index: 1000;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs, 6px);
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.profileButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.profileIcon {
+  height: 28px;
+  width: 28px;
+}

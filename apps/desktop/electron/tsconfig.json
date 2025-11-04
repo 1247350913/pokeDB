@@ -4,8 +4,9 @@
     "module": "NodeNext",
     "rootDir": "src",
     "outDir": "dist",
-    "types": ["electron"],
+    "baseUrl": ".",
+    "types": ["node"],
     "moduleResolution": "NodeNext"
   },
-  "include": ["src"]
+  "include": ["main.ts", "preload.ts", "src/**/*"]
 }

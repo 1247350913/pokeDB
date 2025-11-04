@@ -1,5 +1,10 @@
-.ui-button {
-  composes: ui-reset;
+.reset {
+  all: unset;
+  font: inherit;
+  color: inherit;
+}
+
+.base {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -11,35 +16,21 @@
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.ui-button:active {
-  transform: translateY(1px);
-}
-
-.ui-button--primary {
+.primary {
   background-color: var(--color-accent);
-  color: white;
+  color: #fff;
 }
-
-.ui-button--primary:hover {
+.primary:hover {
   background-color: var(--color-accent-hover);
 }
 
-.ui-button--secondary {
+.secondary {
   background: transparent;
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
 }
 
-.ui-button--ghost {
+.ghost {
   background: none;
   color: var(--color-text);
-}
-
-/* Disabled state (applies to all variants) */
-.ui-button:disabled,
-.ui-button[disabled] {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-  pointer-events: none;
 }

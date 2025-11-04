@@ -7,6 +7,16 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@root/*": ["*"],
+      "@ui/*": ["packages/ui/src/*"],
+      "@app-ui/*": ["packages/app-ui/src/*"],
+      "@components/*": ["packages/app-ui/src/components/*"]
+    },
+    "typeRoots": [
+      "./packages/types/ambient",
+      "./node_modules/@types"
+    ]
   }
 }

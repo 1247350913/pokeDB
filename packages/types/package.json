@@ -1,6 +1,17 @@
 {
-  "name": "@packages/shared-types",
+  "name": "@packages/types",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "exports": { ".": "./src/index.ts" }
+  "files": ["dist", "ambient"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    },
+    "./ambient": {
+      "types": "./ambient/index.d.ts",
+      "default": "./ambient/index.d.ts"
+    }
+  }
 }
