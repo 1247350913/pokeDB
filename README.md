@@ -1,3 +1,3 @@
 # pokeDB
 
-This is a cool thing that does stuff.
+Find and compare niche HM slaves and other pokemon across any game or generation; design parties
